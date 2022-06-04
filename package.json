@@ -10,10 +10,14 @@
     "fs4": "node ./src/fs/delete.js",
     "fs5": "node ./src/fs/list.js",
     "fs6": "node ./src/fs/read.js",
-    "cli1_powershell": "$env:RSS_value1='value1'; $env:RSS_value2='value2'; node ./src/cli/env.js",
+    "cli1_powershell": "set RSS_value1='value1' && set RSS_value2='value2' && node ./src/cli/env.js",
     "cli1_bash": "RSS_name1=value1 RSS_name2=value2 node ./src/cli/env.js",
     "cli2": "node ./src/cli/args.js --propName value --prop2Name value2",
     "module": "node ./src/modules/cjsToEsm.mjs",
+    "hash": "node ./src/hash/calcHash.js",
+    "streams1": "node ./src/streams/read.js",
+    "streams2": "node ./src/streams/write.js",
+    "streams3": "node ./src/streams/transform.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
