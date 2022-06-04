@@ -18,6 +18,8 @@
     "streams1": "node ./src/streams/read.js",
     "streams2": "node ./src/streams/write.js",
     "streams3": "node ./src/streams/transform.js",
+    "zip1": "node ./src/zip/compress.js",
+    "zip2": "node ./src/zip/decompress.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
