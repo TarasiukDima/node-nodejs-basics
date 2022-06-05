@@ -1,13 +1,12 @@
 import path, { dirname } from 'path';
-import { readFile  } from 'fs/promises';
+import { readFile } from 'fs/promises';
 import { release, version } from 'os';
 import { createServer as createServerHttp } from 'http';
+import { fileURLToPath } from 'url';
 import './files/c.js';
 
-import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
 
 const random = Math.random();
 
@@ -15,11 +14,11 @@ let unknownObject;
 
 if (random > 0.5) {
   unknownObject = JSON.parse(
-    await readFile( new URL( './files/a.json', import.meta.url ) )
+    await readFile(new URL('./files/a.json', import.meta.url))
   );
 } else {
   unknownObject = JSON.parse(
-    await readFile( new URL( './files/b.json', import.meta.url ) )
+    await readFile(new URL('./files/b.json', import.meta.url))
   );
 }
 
@@ -38,4 +37,3 @@ export {
   unknownObject,
   createMyServer,
 };
-

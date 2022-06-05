@@ -5,8 +5,6 @@ import { isExistFileOrFolder } from '../utils/helpers.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-
-
 export const read = async () => {
   const filePath = path.join(__dirname, 'files', 'fileToRead.txt');
   const hasFile = await isExistFileOrFolder(filePath);
@@ -14,13 +12,13 @@ export const read = async () => {
 
   try {
     if (hasFile) {
-      await fsPromises.readFile(filePath, { encoding: 'utf-8'})
+      await fsPromises.readFile(filePath, { encoding: 'utf-8' })
         .then((data) => {
           console.log(data);
         })
         .catch((_) => {
           throw new Error(errorText);
-      })
+        })
     } else {
       throw new Error(errorText);
     }

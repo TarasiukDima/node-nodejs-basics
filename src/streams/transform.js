@@ -1,6 +1,6 @@
 import readline from 'readline';
 import process from 'process';
-import {Transform}  from 'stream';
+import { Transform } from 'stream';
 
 export const transform = async () => {
   const startWriteText = 'Write something, please!\n';

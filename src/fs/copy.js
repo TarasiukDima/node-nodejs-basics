@@ -51,14 +51,12 @@ const copyFiles = (filesList, folderPath, newFolderPath) => {
   });
 };
 
-
 export const copy = async () => {
   const folderPath = path.join(__dirname, 'files');
   const newFolderPath = path.join(__dirname, 'files_copy');
   const errorText = 'FS operation failed';
   const hasFilesFolder = await isExistFileOrFolder(folderPath);
   const hasCopyFilesFolder = await isExistFileOrFolder(newFolderPath);
-
 
   try {
     if (hasFilesFolder && !hasCopyFilesFolder) {

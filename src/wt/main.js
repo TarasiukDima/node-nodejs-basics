@@ -19,7 +19,6 @@ const runWorker = async (path, workerData, res, rej) => {
   })
 }
 
-
 export const performCalculations = async () => {
   const workerPath = path.join(__dirname, 'worker.js');
   const CPUCores = os.cpus().length;
