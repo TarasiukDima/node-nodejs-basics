@@ -21,6 +21,7 @@
     "zip1": "node ./src/zip/compress.js",
     "zip2": "node ./src/zip/decompress.js",
     "worker": "node ./src/wt/main.js",
+    "cp": "node ./src/cp/cp.js arg1 arg2 something3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
