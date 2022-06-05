@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export const rename = async () => {
   const fileBadName = path.join(__dirname, 'files', 'wrongFilename.txt');
   const fileGoodName = path.join(__dirname, 'files', 'properFilename.md');
-  const errorText = 'FS operation failed';
+  const errorText = 'FS rename operation failed';
   const hasBadFile = await isExistFileOrFolder(fileBadName);
   const hasGoodFile = await isExistFileOrFolder(fileGoodName);
 

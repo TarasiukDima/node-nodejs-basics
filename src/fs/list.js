@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export const list = async () => {
   const readFolder = path.join(__dirname, 'files');
-  const errorText = 'FS operation failed';
+  const errorText = 'FS list operation failed';
 
   try {
     await fsPromises.readdir(readFolder, { withFileTypes: true })

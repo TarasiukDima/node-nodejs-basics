@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export const remove = async () => {
   const removeFile = path.join(__dirname, 'files', 'fileToRemove.txt');
-  const errorText = 'FS operation failed';
+  const errorText = 'FS remove operation failed';
 
   try {
     await fsPromises.rm(removeFile)

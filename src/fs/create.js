@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export const create = async () => {
   const newFilePath = path.join(__dirname, 'files', 'fresh.txt');
   const content = 'I am fresh and young';
-  const errorText = 'FS operation failed';
+  const errorText = 'FS create operation failed';
   const hasFile = await isExistFileOrFolder(newFilePath);
 
   try {

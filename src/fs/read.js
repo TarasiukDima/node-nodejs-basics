@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export const read = async () => {
   const filePath = path.join(__dirname, 'files', 'fileToRead.txt');
   const hasFile = await isExistFileOrFolder(filePath);
-  const errorText = 'FS operation failed';
+  const errorText = 'FS read operation failed';
 
   try {
     if (hasFile) {
