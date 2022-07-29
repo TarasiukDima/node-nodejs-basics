@@ -4,6 +4,23 @@
   "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
   "type": "module",
   "scripts": {
+    "fs1": "node ./src/fs/create.js",
+    "fs2": "node ./src/fs/copy.js",
+    "fs3": "node ./src/fs/rename.js",
+    "fs4": "node ./src/fs/delete.js",
+    "fs5": "node ./src/fs/list.js",
+    "fs6": "node ./src/fs/read.js",
+    "cli1_powershell": "set RSS_value1=value1 && set RSS_value2=value2 && node ./src/cli/env.js",
+    "cli2": "node ./src/cli/args.js --propName value --prop2Name value2",
+    "module": "node ./src/modules/cjsToEsm.mjs",
+    "hash": "node ./src/hash/calcHash.js",
+    "streams1": "node ./src/streams/read.js",
+    "streams2": "node ./src/streams/write.js",
+    "streams3": "node ./src/streams/transform.js",
+    "zip1": "node ./src/zip/compress.js",
+    "zip2": "node ./src/zip/decompress.js",
+    "worker": "node ./src/wt/main.js",
+    "cp": "node ./src/cp/cp.js arg1 arg2 something3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
